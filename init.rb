@@ -6,10 +6,10 @@ Rails.configuration.to_prepare do
 end
 
 Redmine::Plugin.register :redmine_responsive do
-  name 'Redmine Responsive plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  name 'Redmine Responsive layout plugin'
+  author 'Oleg German, original patches by Jan from plan.io'
+  description 'Patches from https://www.redmine.org/issues/19097 extracted to plugin, originally by Jan from plan.io'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/ogerman/redmine_responsive'
+  author_url 'https://github.com/ogerman/redmine_responsive'
 end
