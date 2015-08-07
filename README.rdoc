@@ -1,3 +1,0 @@
-= redmine_responsive
-
-Description goes here
