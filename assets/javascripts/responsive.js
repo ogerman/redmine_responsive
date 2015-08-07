@@ -1,6 +1,6 @@
 function insertHtmlPatch() {
-  $('div#wrapper').prepend('<%= j render(:partial => 'flyout_menu') %>');
-  $('div#header').prepend('<%= j render(:partial => 'mobile_toggle_button') %>');
+  $('div#wrapper').prepend($("#flyout-menu-temp-wrapper").detach().html());
+  $('div#header').prepend($("#mobile-toggle-button-temp-wrapper").detach().html());
 }
 
 // generic layout specific responsive stuff goes here
