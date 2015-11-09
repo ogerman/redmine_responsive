@@ -779,3 +779,11 @@
         width: 100%;
     }
 }
+
+@media print and (max-width: 899px)
+{
+  /* avoid the scrollbar on print */
+  body, html {
+    height: auto;
+  }
+}
