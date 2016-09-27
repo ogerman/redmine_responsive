@@ -12,7 +12,7 @@ module ApplicationHelperPatch
   module InstanceMethods
     def render_project_jump_box_with_responsive
       return unless User.current.logged?
-      if Redmine::VERSION::MAJOR >= 2
+      if Redmine::VERSION::MAJOR >= 3
         projects = User.current.projects.active.select(:id, :name, :identifier, :lft, :rgt).to_a
       else
         projects = User.current.memberships.collect(&:project).compact.select(&:active?).uniq
